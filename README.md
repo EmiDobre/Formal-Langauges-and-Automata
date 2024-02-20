@@ -30,6 +30,7 @@ The idea behind the Lexer:
 For identifying the longest match in a word to a certain token in the specification of the Lexer it is enough to "cut" from the initial word starting from the initial word, cutting one letter until we find the longest match or the word is used. A part of the word is considered the longest match if the DFA of the regex form spec accepts that part of the word.
 
 For this, I introduce another concept: DFA, NFA, and Regex to help with finding the longest match and tokenizing the word. Finding the DFA automata for a regex is done in multiple steps: 
+
 regex----THOMPSON---->nfa----SUBSET CONSTRUCTION---->dfa.
 
 Regex---->THOMPSON---->Nfa:
